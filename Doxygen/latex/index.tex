@@ -1,0 +1,51 @@
+\hypertarget{index_intro_sec}{}\doxysection{Introduzione del progetto}\label{index_intro_sec}
+Snake Labyrinth è un progetto universitario formato da un gioco dove il serpente deve trovare l\textquotesingle{}uscita dal labirinto.~\newline
+All\textquotesingle{}interno del gioco sono presenti imprevisti che dimezzano il punteggio ottenuto, monete che aumentano il punteggio e trapani per oltrepassare i muri.~\newline
+\hypertarget{index_spig_sec}{}\doxysection{Spiegazione funzionamento generale}\label{index_spig_sec}
+Il gioco è suddiviso in più modalità\+:
+\begin{DoxyItemize}
+\item modalità manuale\+: dove l\textquotesingle{}utente decide le mosse;~\newline
+
+\item modalità random\+: dove le mosse sono decise in maniera casuale dalla CPU;~\newline
+
+\item modalità intelligente\+: dove le mosse sono decise secondo algoritmi stabiliti dallo sviluppatore. 
+\end{DoxyItemize}\hypertarget{index_err_sec}{}\doxysection{Possibili errori durante l\textquotesingle{}esecuzione}\label{index_err_sec}
+Gli errori possibili durante l’esecuzione del programma si dividono in due categorie\+:
+\begin{DoxyItemize}
+\item Errori standard\+: errori che non compromettono il gioco;~\newline
+
+\item Errori gravi\+: errori che chiudono il programma.~\newline
+~\newline
+
+\end{DoxyItemize}
+
+Durante lo spostamento del serpente sono presenti tre errori standard\+:~\newline
+
+\begin{DoxyItemize}
+\item input invalido, in quanto è presente un muro e non si hanno trapani nello zaino;~\newline
+
+\item input invalido, in quanto si sta uscendo dalla mappa di gioco;~\newline
+
+\item durante la ricerca automatica del percorso non sempre viene trovata la strada per uscire. Dopo 15.\+000 passi il programma automaticamente si ferma.~\newline
+~\newline
+
+\end{DoxyItemize}
+
+Durante l’inserimento manuale della mappa sono presenti tre errori gravi\+:~\newline
+
+\begin{DoxyItemize}
+\item nel labirinto non è presente l’entrata;~\newline
+
+\item ne labirinto non è presente l’uscita;~\newline
+
+\item la mappa è troppo grande per la memoria disponibile nell\textquotesingle{}elaboratore~\newline
+~\newline
+
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Nota}
+Il gioco permette di giocare una partita alla volta. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Avvertimento}
+Per poterci giocare è necessario un computer in cui deve essere presente un compilatore di linguaggio C, come gcc. 
+\end{DoxyWarning}
